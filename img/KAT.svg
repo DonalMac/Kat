@@ -1,0 +1,20 @@
+<svg width="1400" height="700" viewBox="0 0 1400 700" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .name {
+      fill: #ffffff;
+      font-family: "Allura", "Great Vibes", "Segoe Script", "Lucida Handwriting", cursive;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+  </style>
+
+  <!-- First Name -->
+  <text x="50%" y="300" text-anchor="middle" class="name" font-size="190">
+    Kathrin
+  </text>
+
+  <!-- Last Name -->
+  <text x="50%" y="520" text-anchor="middle" class="name" font-size="190">
+    Luber
+  </text>
+</svg>
