@@ -1,6 +1,8 @@
 /*** Global Variable definition ***/
 :root {
-  --color-highlight: #ea10ff;
+  --color-highlight: #34794f;
+  --color-main: #34794f;
+  --color-contrast: black;
 
 }
 
@@ -16,9 +18,10 @@ html {
 }
 
 body {
+  background-image: url("../img/KatBG.png");
   background-color: #000;
   font-family: "Inter", sans-serif;
-  color: #d2d0d0;
+  color: var(--color-contrast);
 }
 
 li {
@@ -78,6 +81,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
+  background-color: white;
 }
 
 .nav-logo {
@@ -111,7 +115,7 @@ a {
 }
 
 .nav-link {
-  color: #fff;
+  color: #34794f;
   font-weight: 500;
 }
 
@@ -125,6 +129,7 @@ main {
   width: 100%;
   padding: 0 10vw;
   min-height: 100vh;
+
 }
 
 section {
@@ -155,7 +160,7 @@ h3 {
 }
 
 h1 {
-  color: #fff;
+  color: #080808;
 }
 
 .big-heading {
@@ -369,7 +374,7 @@ p {
 }
 
 .project-description {
-  background-color: #212121;
+  background-color: #e4ffe3;
   padding: 25px;
   border-radius: 3px;
   text-align: inherit;
@@ -413,7 +418,7 @@ p {
 }
 
 .other-project-list li {
-  background-color: #212121;
+  background-color: #e4ffe3;
 }
 
 .project-inner {
@@ -549,6 +554,7 @@ footer {
   .hamburger {
     display: block;
     cursor: pointer;
+    background-color: #34794f;
   }
 
   .hamburger.active .bar:nth-child(2) {
