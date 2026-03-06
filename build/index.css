@@ -1,6 +1,6 @@
 /*** Global Variable definition ***/
 :root {
-  --color-highlight: #34794f;
+  --color-highlight: #000f72;
   --color-main: #34794f;
   --color-contrast: black;
   --color-mobile: #defffd;
@@ -19,8 +19,9 @@ html {
 }
 
 body {
-  background-image: url("../img/KatBG.png");
-  background-color: #000;
+  background-image: url("../img/Surreal10.png");
+  background-repeat: no-repeat;
+  background-color: #d6a83f;
   font-family: "Inter", sans-serif;
   color: var(--color-contrast);
 }
@@ -102,7 +103,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-  background-color: white;
+  background-color: #081145;
 }
 
 .nav-logo {
