@@ -3,7 +3,7 @@
   --color-highlight: #000f72;
   --color-main: #34794f;
   --color-contrast: black;
-  --color-mobile: #defffd;
+  --color-mobile: #fcef78;
   --color-hamburger: #f1aa0e;
 
 }
@@ -547,7 +547,7 @@ footer {
   background-image: url("../img/SurrealBG1.png");
   background-size: 60% auto;
   background-position: right 60px;
-  /* background-color: var(--color-mobile); */
+  background-color: var(--color-mobile); 
 
   }
   .nav-logo {
