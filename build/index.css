@@ -547,7 +547,7 @@ footer {
   background-image: url("../img/SurrealBG1.png");
   background-size: 60% auto;
   background-position: right 60px;
-  background-color: var(--color-mobile); 
+  background-color: var(--color-mobile);
 
   }
   .nav-logo {
@@ -562,7 +562,9 @@ footer {
   .project-title {
     font-size: 19.2px;
   }
-
+  .project-description {
+    background-color: #74e6a0;
+  }
   .project-content {
     min-width: 0;
     width: 100%;
