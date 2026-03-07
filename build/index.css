@@ -543,8 +543,12 @@ footer {
 @media all and (max-width: 576px) {
 
   body{
-  /*  background-image: url("../img/KatBGmobile.svg");
-   background-color: var(--color-mobile); */
+
+  background-image: url("../img/SurrealBG.png");
+  background-size: 60% auto;
+  background-position: right 60px;
+  /* background-color: var(--color-mobile); */
+
   }
   .nav-logo {
     max-width: 170px;
