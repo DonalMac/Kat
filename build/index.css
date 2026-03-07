@@ -4,6 +4,7 @@
   --color-main: #34794f;
   --color-contrast: black;
   --color-mobile: #defffd;
+  --color-hamburger: #f1aa0e;
 
 }
 
@@ -122,7 +123,7 @@ a {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #fff;
+  background-color: #f1aa0e;
 }
 
 .nav-menu {
@@ -137,7 +138,7 @@ a {
 }
 
 .nav-link {
-  color: #34794f;
+  color:var(--color-hamburger);
   font-weight: 500;
 }
 
@@ -594,7 +595,7 @@ footer {
   .hamburger {
     display: block;
     cursor: pointer;
-    background-color: #34794f;
+
   }
 
   .hamburger.active .bar:nth-child(2) {
