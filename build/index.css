@@ -107,7 +107,7 @@ a {
 }
 
 .nav-logo {
-  max-width: 170px;
+  max-width: 300px;
   padding-left: 10px;
 }
 
@@ -396,7 +396,7 @@ p {
 }
 
 .project-description {
-  background-color: #e4ffe3;
+  background-color: #94ffc5;
   padding: 25px;
   border-radius: 3px;
   text-align: inherit;
@@ -440,7 +440,7 @@ p {
 }
 
 .other-project-list li {
-  background-color: #e4ffe3;
+  background-color: #94ffc5;
 }
 
 .project-inner {
@@ -528,6 +528,10 @@ footer {
   .big-heading {
     font-size: 39.2px;
   }
+  .nav-logo {
+    max-width: 170px;
+    padding-left: 10px;
+  }
 
   .section-heading,
   .project-title {
@@ -538,8 +542,12 @@ footer {
 @media all and (max-width: 576px) {
 
   body{
-    background-image: url("../img/KatBGmobile.svg");
-    background-color: var(--color-mobile);
+  /*  background-image: url("../img/KatBGmobile.svg");
+   background-color: var(--color-mobile); */
+  }
+  .nav-logo {
+    max-width: 170px;
+    padding-left: 10px;
   }
   .big-heading {
     font-size: 33.6px;
@@ -569,6 +577,10 @@ footer {
     border-radius: 3px;
     text-align: center;
     transition: 0.3s;
+  }
+  .nav-logo {
+    max-width: 170px;
+    padding-left: 10px;
   }
 
   .nav-menu.active {
