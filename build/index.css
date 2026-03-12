@@ -5,6 +5,7 @@
   --color-contrast: black;
   --color-mobile: #fcef78;
   --color-hamburger: #f1aa0e;
+  
 
 }
 
@@ -25,6 +26,12 @@ body {
   background-color: #d6a83f;
   font-family: "Inter", sans-serif;
   color: var(--color-contrast);
+}
+.language {
+position: absolute;   /* floats independently */
+top: 58%;
+right: 20px;          /* adjust as needed */
+transform: translateY(-50%);
 }
 
 li {
@@ -221,6 +228,17 @@ p {
   align-items: flex-start;
   min-height: 100vh;
   padding: 0px;
+
+}
+
+.mainBox {
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  background-size:cover;
+  padding: 25px;
+  border-radius: 3px;
+  text-align: inherit;
+  margin-bottom: 25px;
+
 }
 
 .intro-text-wrapper {
@@ -397,7 +415,7 @@ p {
 }
 
 .project-description {
-  background-color: #94ffc5;
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
   padding: 25px;
   border-radius: 3px;
   text-align: inherit;
@@ -492,6 +510,8 @@ footer {
 
 /*** RESPONSIVE DESIGN ***/
 @media all and (max-width: 1200px) {
+
+
   .big-heading {
     font-size: 50.4px;
   }
@@ -550,6 +570,12 @@ footer {
   background-color: var(--color-mobile);
 
   }
+  .language {
+  position: absolute;
+  top: 45%;
+  right: 60px; /* adjust as needed */
+  transform: translateY(-50%);
+}
   .nav-logo {
     max-width: 170px;
     padding-left: 10px;
@@ -573,6 +599,12 @@ footer {
 
 @media only screen and (max-width: 768px) {
 
+  .language {
+  position: absolute;
+  top: 45%;
+  right: 60px; /* adjust as needed */
+  transform: translateY(-50%);
+ }
   /* Navigation */
   .nav-menu {
     position: fixed;
