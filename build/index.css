@@ -2,11 +2,20 @@
 :root {
   --color-highlight: #000f72;
   --color-main: #34794f;
+  --page-bg: #f4f4f4;
+  --hero-fade: linear-gradient(
+    to bottom,
+    var(--color-BG) 15%,
+    rgba(255,255,255,0) 100%
+);
   --color-contrast: black;
   --color-mobile: #fcef78;
   --color-hamburger: #f1aa0e;
-  
-
+  --color-BG: #d6a83f;
+  --color-NavBar: #081145;
+  --color-bar:#f1aa0e;
+  --color-OtherProjectList:#94ffc5;
+  --color-inner: pink;
 }
 
 /*** GENERAL ***/
@@ -21,15 +30,13 @@ html {
 }
 
 body {
-  background-image: url("../img/Surreal10.png");
-  background-repeat: no-repeat;
-  background-color: #d6a83f;
+  background:url("../img/Surreal5.png")no-repeat,var(--hero-fade);
   font-family: "Inter", sans-serif;
   color: var(--color-contrast);
 }
 .language {
 position: absolute;   /* floats independently */
-top: 58%;
+top: 51%;
 right: 20px;          /* adjust as needed */
 transform: translateY(-50%);
 }
@@ -94,7 +101,7 @@ a {
 /*** HEADER ***/
 .header {
   overflow: hidden;
-  height: 80px;
+  height: 110px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -111,11 +118,11 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-  background-color: #081145;
+  background-color:var(--color-NavBar);
 }
 
 .nav-logo {
-  max-width: 300px;
+  max-width: 380px;
   padding-left: 10px;
 }
 
@@ -130,7 +137,7 @@ a {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #f1aa0e;
+  background-color: var(--color-bar);
 }
 
 .nav-menu {
@@ -159,13 +166,15 @@ main {
   width: 100%;
   padding: 0 10vw;
   min-height: 100vh;
+  /*background-color: var(--color-main); */
 
 }
 
 section {
-  padding: 15vh 0;
+  padding: 5vh 0;
   margin: 0px auto;
   max-width: 1000px;
+  /* background-color: var(--color-inner);*/
 }
 
 .reveal {
@@ -225,16 +234,16 @@ p {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: flex-start;
+  /*align-items: flex-start;*/
   min-height: 100vh;
   padding: 0px;
 
 }
 
 .mainBox {
-  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  /*background: linear-gradient(135deg, #e0f7fa, #b2ebf2); */
   background-size:cover;
-  padding: 25px;
+  padding: 5px;
   border-radius: 3px;
   text-align: inherit;
   margin-bottom: 25px;
@@ -336,7 +345,7 @@ p {
 /* About me */
 .about-me-details {
   display: grid;
-  grid-template-columns: 3fr 2fr;
+/*  grid-template-columns: 3fr 2fr; */
   grid-auto-flow: column;
   gap: 50px;
   width: 100%;
@@ -353,6 +362,14 @@ p {
   position: relative;
   border-radius: 5px;
 }
+
+.image-surreal{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  }
 
 .skills-list {
   margin: 20px 0px 0px;
@@ -459,7 +476,8 @@ p {
 }
 
 .other-project-list li {
-  background-color: #94ffc5;
+  background-color:var(--color-OtherProjectList);
+
 }
 
 .project-inner {
@@ -572,7 +590,7 @@ footer {
   }
   .language {
   position: absolute;
-  top: 45%;
+  top: 33%;
   right: 60px; /* adjust as needed */
   transform: translateY(-50%);
 }
@@ -601,7 +619,7 @@ footer {
 
   .language {
   position: absolute;
-  top: 45%;
+  top: 33%;
   right: 60px; /* adjust as needed */
   transform: translateY(-50%);
  }
