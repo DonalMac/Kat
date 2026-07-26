@@ -374,7 +374,7 @@ p {
 .skills-list {
   margin: 20px 0px 0px;
   display: grid;
-  grid-template-columns: repeat(2, minmax(140px, 200px));
+  /*grid-template-columns: repeat(2, minmax(140px, 200px)); */
   gap: 0px 10px;
   padding: 0px;
   overflow: hidden;
