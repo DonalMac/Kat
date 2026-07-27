@@ -3,18 +3,16 @@
   --color-highlight: #000f72;
   --color-main: #34794f;
   --page-bg: #f4f4f4;
-  --hero-fade: linear-gradient(
-    to bottom,
-    var(--color-BG) 25%,
-    var(--color-inner) 100%
-);
+  --hero-fade: linear-gradient(to bottom,
+      var(--color-BG) 25%,
+      var(--color-inner) 100%);
   --color-contrast: black;
-  --color-mobile: #fcef78;
+  --color-mobile: creme;
   --color-hamburger: #f1aa0e;
   --color-BG: white;
   --color-NavBar: #081145;
-  --color-bar:#f1aa0e;
-  --color-OtherProjectList:#94ffc5;
+  --color-bar: #f1aa0e;
+  --color-OtherProjectList: #94ffc5;
   --color-inner: #87e6a2;
 }
 
@@ -30,15 +28,18 @@ html {
 }
 
 body {
-  background:url("../img/SurrealW2.png")no-repeat,var(--hero-fade);
+  background: url("../img/SurrealW2.png")no-repeat, var(--hero-fade);
   font-family: "Nunito", sans-serif;
   color: var(--color-contrast);
 }
+
 .language {
-position: absolute;   /* floats independently */
-top: 51%;
-right: 20px;          /* adjust as needed */
-transform: translateY(-50%);
+  position: absolute;
+  /* floats independently */
+  top: 51%;
+  right: 20px;
+  /* adjust as needed */
+  transform: translateY(-50%);
 }
 
 li {
@@ -66,6 +67,7 @@ a {
   font-weight: 300;
   position: relative;
 }
+
 .buttonContact {
   display: inline-block;
   padding: 0.75rem 0rem;
@@ -118,7 +120,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-  background-color:var(--color-NavBar);
+  background-color: var(--color-NavBar);
 }
 
 .nav-logo {
@@ -152,7 +154,7 @@ a {
 }
 
 .nav-link {
-  color:var(--color-hamburger);
+  color: var(--color-hamburger);
   font-weight: 500;
 }
 
@@ -246,7 +248,7 @@ p {
 
 .mainBox {
   /*background: linear-gradient(135deg, #e0f7fa, #b2ebf2); */
-  background-size:cover;
+  background-size: cover;
   padding: 5px;
   border-radius: 3px;
   text-align: inherit;
@@ -349,7 +351,7 @@ p {
 /* About me */
 .about-me-details {
   display: grid;
-/*  grid-template-columns: 3fr 2fr; */
+  /*  grid-template-columns: 3fr 2fr; */
   grid-auto-flow: column;
   gap: 50px;
   width: 100%;
@@ -367,13 +369,13 @@ p {
   border-radius: 5px;
 }
 
-.image-surreal{
+.image-surreal {
   width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
   border-radius: 10px;
-  }
+}
 
 .skills-list {
   margin: 20px 0px 0px;
@@ -484,7 +486,7 @@ p {
 }
 
 .other-project-list li {
-  background-color:var(--color-OtherProjectList);
+  background-color: var(--color-OtherProjectList);
 
 }
 
@@ -535,8 +537,22 @@ footer {
 }
 
 /*** RESPONSIVE DESIGN ***/
-@media all and (max-width: 1200px) {
+/*** LARGE TABLETS SMALL LAPTOPS ***/
+@media all and (max-width: 1100px) {
 
+  .navbar {
+    gap: 20px;
+  }
+
+  .nav-logo {
+
+    padding-left: 0px;
+  }
+
+  .nav-menu {
+    width: auto;
+
+  }
 
   .big-heading {
     font-size: 50.4px;
@@ -550,7 +566,8 @@ footer {
   }
 }
 
-@media all and (min-width: 768px) and (max-width: 992px) {
+/*** TABLETS ***/
+@media all and (max-width: 992px) {
   .big-heading {
     font-size: 44.8px;
   }
@@ -570,69 +587,20 @@ footer {
     margin: 50px auto;
     width: 80%;
   }
-}
 
-@media all and (min-width: 576px) and (max-width: 768px) {
-
-  .big-heading {
-    font-size: 39.2px;
-  }
-  .nav-logo {
-    max-width: 170px;
-    padding-left: 10px;
-  }
-
-  .section-heading,
-  .project-title {
-    font-size: 22.4px;
-  }
-}
-
-@media all and (max-width: 576px) {
-
-  body{
-
-  background-image: url("../img/SurrealBG1.png");
-  background-size: 60% auto;
-  background-position: right 60px;
-  background-color: var(--color-mobile);
-
-  }
-  .language {
-  position: absolute;
-  top: 33%;
-  right: 60px; /* adjust as needed */
-  transform: translateY(-50%);
-}
-  .nav-logo {
-    max-width: 170px;
-    padding-left: 10px;
-  }
-  .big-heading {
-    font-size: 33.6px;
-  }
-
-  .section-heading,
-  .project-title {
-    font-size: 19.2px;
-  }
-  .project-description {
-    background-color: #74e6a0;
-  }
   .project-content {
     min-width: 0;
     width: 100%;
   }
-}
-
-@media only screen and (max-width: 768px) {
 
   .language {
-  position: absolute;
-  top: 33%;
-  right: 60px; /* adjust as needed */
-  transform: translateY(-50%);
- }
+    position: absolute;
+    top: 46%;
+    right: 60px;
+    /* adjust as needed */
+    transform: translateY(-50%);
+  }
+
   /* Navigation */
   .nav-menu {
     position: fixed;
@@ -645,8 +613,9 @@ footer {
     text-align: center;
     transition: 0.3s;
   }
+
   .nav-logo {
-    max-width: 170px;
+    max-width: 330px;
     padding-left: 10px;
   }
 
@@ -676,31 +645,124 @@ footer {
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  /* About me */
-  .about-me-details {
+}
+
+/*** MOBILE LANDSCAPE SMALL TABLETS ***/
+@media all and (min-width: 560px) and (max-width: 767px) {
+
+  .big-heading {
+    font-size: 39.2px;
+  }
+
+  .nav-logo {
+    max-width: 330px;
+    padding-left: 10px;
+  }
+
+  .section-heading,
+  .project-title {
+    font-size: 22.4px;
+  }
+
+  .language {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  .hamburger {
     display: block;
+    cursor: pointer;
+
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/*** MOBILE  ***/
+@media all and (max-width: 576px) {
+
+  .about-me-details {
+    max-width: 300px;
+    display: block;
+    position: relative;
+    border-radius: 5px;
   }
 
   .profile-image {
-    margin: 50px auto;
-    width: 100%;
+    width: 300px;
   }
 
-  /* Projects */
-  .project-right-align,
-  .project-left-align {
-    display: block;
+  body {
+
+    /* background-image: url("../img/SurrealBG1.png"); */
+    background-image: none;
+    background-size: 60% auto;
+    background-position: right 60px;
+    background-color: var(--color-mobile);
+
   }
 
-  .project-image {
-    margin: 50px auto;
-    width: 80%;
+  .language {
+    position: absolute;
+    top: 33%;
+    right: 60px;
+    /* adjust as needed */
+    transform: translateY(-50%);
+  }
+
+  .nav-logo {
+    max-width: 276px;
+    padding-left: 10px;
+  }
+
+  .big-heading {
+    font-size: 33.6px;
+  }
+
+  .section-heading,
+  .project-title {
+    font-size: 19.2px;
+  }
+
+  .project-description {
+    background-color: #74e6a0;
   }
 
   .project-content {
     min-width: 0;
     width: 100%;
   }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 }
+
+
 
 /*# sourceMappingURL=index.css.map */
