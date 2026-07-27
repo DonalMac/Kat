@@ -5,17 +5,17 @@
   --page-bg: #f4f4f4;
   --hero-fade: linear-gradient(
     to bottom,
-    var(--color-BG) 15%,
-    rgba(255,255,255,0) 100%
+    var(--color-BG) 25%,
+    var(--color-inner) 100%
 );
   --color-contrast: black;
   --color-mobile: #fcef78;
   --color-hamburger: #f1aa0e;
-  --color-BG: #d6a83f;
+  --color-BG: white;
   --color-NavBar: #081145;
   --color-bar:#f1aa0e;
   --color-OtherProjectList:#94ffc5;
-  --color-inner: pink;
+  --color-inner: #87e6a2;
 }
 
 /*** GENERAL ***/
@@ -30,8 +30,8 @@ html {
 }
 
 body {
-  background:url("../img/Surreal5.png")no-repeat,var(--hero-fade);
-  font-family: "Inter", sans-serif;
+  background:url("../img/SurrealW2.png")no-repeat,var(--hero-fade);
+  font-family: "Nunito", sans-serif;
   color: var(--color-contrast);
 }
 .language {
@@ -204,6 +204,8 @@ h1 {
 
 .big-heading {
   font-size: 56px;
+  font-weight: bold;
+  font-weight: 700;
 }
 
 .section-heading {
@@ -214,14 +216,16 @@ h1 {
 .tagline,
 .project-overline,
 .highlight {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Nunito", monospace;
   color: var(--color-highlight);
   line-height: 1.6;
   font-size: 20px;
+  margin: 20px 0px;
 }
 
 .project-overline {
   font-size: 16px;
+  /*font-weight: bold; */
 }
 
 p {
@@ -375,13 +379,14 @@ p {
   margin: 20px 0px 0px;
   display: grid;
   /*grid-template-columns: repeat(2, minmax(140px, 200px)); */
-  gap: 0px 10px;
+  gap: 10px 10px;
   padding: 0px;
   overflow: hidden;
 }
 
 .skills-list li {
   font-family: "Roboto Mono", monospace;
+  font-weight: bold;
   color: var(--color-highlight);
   line-height: 1.6;
 }
@@ -432,7 +437,10 @@ p {
 }
 
 .project-description {
-  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  /* background: linear-gradient(135deg, #e0f7fa, #b2ebf2); */
+  border-right: 1px solid silver;
+  border-bottom: 1px dashed silver;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   padding: 25px;
   border-radius: 3px;
   text-align: inherit;
@@ -532,6 +540,8 @@ footer {
 
   .big-heading {
     font-size: 50.4px;
+    font-weight: bold;
+    font-weight: 700;
   }
 
   .section-heading,
