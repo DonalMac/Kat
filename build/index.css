@@ -8,12 +8,12 @@
       var(--color-inner) 100%);
   --color-contrast: black;
   --color-mobile: creme;
-  --color-hamburger: #f1aa0e;
+  --color-hamburger: #000f72;
   --color-BG: white;
-  --color-NavBar: #081145;
+  --color-NavBar: #c5f5c6;
   --color-bar: #f1aa0e;
   --color-OtherProjectList: #94ffc5;
-  --color-inner: #87e6a2;
+  --color-inner: #b9ffcd;
 }
 
 /*** GENERAL ***/
@@ -28,9 +28,12 @@ html {
 }
 
 body {
-  background: url("../img/SurrealW2.png")no-repeat, var(--hero-fade);
+  background: url("../img/Surreal6.png")no-repeat, var(--hero-fade);
+  background-position: right top, center;
+  background-size: 50% auto;
   font-family: "Nunito", sans-serif;
   color: var(--color-contrast);
+
 }
 
 .language {
@@ -43,7 +46,7 @@ body {
 }
 
 li {
-  list-style: none;
+  margin-bottom: 10px;
 }
 
 a {
@@ -147,6 +150,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 0px;
+  list-style: none;
 }
 
 .nav-item {
@@ -155,11 +159,11 @@ a {
 
 .nav-link {
   color: var(--color-hamburger);
-  font-weight: 500;
+  font-weight: 900;
 }
 
 .nav-link:hover {
-  color: var(--color-highlight);
+  color: rgb(63, 172, 189);
 }
 
 /*** MAIN ***/
@@ -196,7 +200,7 @@ h2,
 h3 {
   line-height: 1.1;
   font-weight: 800;
-  margin: 0px 0px 10px;
+  /*margin: 0px 0px 10px;*/
   color: var(--color-highlight);
 }
 
@@ -205,13 +209,13 @@ h1 {
 }
 
 .big-heading {
-  font-size: 56px;
+  font-size: 40px;
   font-weight: bold;
   font-weight: 700;
 }
 
 .section-heading {
-  font-size: 32px;
+  font-size: 40px;
   color: var(--color-highlight);
 }
 
@@ -225,14 +229,20 @@ h1 {
   margin: 20px 0px;
 }
 
+.central-list {
+  margin-left: 80px;
+  font-style: italic;
+  list-style-type: disc;
+}
+
 .project-overline {
-  font-size: 16px;
-  /*font-weight: bold; */
+  font-size: 20px;
+  font-weight: bold;
 }
 
 p {
   line-height: 1.6;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 /* home */
@@ -253,6 +263,11 @@ p {
   border-radius: 3px;
   text-align: inherit;
   margin-bottom: 25px;
+  box-shadow: 0 5px 25px rgba(0, 255, 42, 0.08);
+  clip-path: polygon(0 0,
+      100% 0,
+      100% 95%,
+      0 100%);
 
 }
 
@@ -358,12 +373,24 @@ p {
   height: auto;
 }
 
+.uber-me-element {
+
+
+  border-right: 1px solid silver;
+  border-bottom: 1px dashed silver;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 25px;
+  border-radius: 3px;
+  text-align: inherit;
+  margin-bottom: 25px;
+}
+
 .about-me-details .about-me-text {
   display: block;
 }
 
 .about-me-details .profile-image {
-  max-width: 300px;
+  max-width: 380px;
   display: block;
   position: relative;
   border-radius: 5px;
@@ -607,7 +634,7 @@ footer {
     left: -100%;
     top: 5rem;
     flex-direction: column;
-    background-color: #212121;
+    background-color: #c5f5c6;
     width: 100%;
     border-radius: 3px;
     text-align: center;
@@ -736,7 +763,7 @@ footer {
   }
 
   .project-description {
-    background-color: #74e6a0;
+    /*background-color: #74e6a0; */
   }
 
   .project-content {
