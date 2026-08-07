@@ -729,6 +729,12 @@ footer {
 /*** MOBILE  ***/
 @media all and (max-width: 576px) {
 
+  .central-list {
+    margin-left: -22px;
+    font-style: italic;
+    list-style-type: disc;
+  }
+
   .about-me-details {
     max-width: 300px;
     display: block;
