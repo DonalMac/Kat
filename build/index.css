@@ -1,7 +1,7 @@
 /*** Global Variable definition ***/
 :root {
   --color-highlight: #000f72;
-  --color-main: #34794f;
+  --color-main: #c5f5c6;
   --page-bg: #f4f4f4;
   --hero-fade: linear-gradient(to bottom,
       var(--color-BG) 25%,
@@ -386,9 +386,9 @@ p {
 
 .uber-me-element {
 
-  border-right: 1px solid var(--color-OtherProjectList);
-  border-bottom: 1px solid var(--color-OtherProjectList);
-  box-shadow: 0 2px 8px var(--color-OtherProjectList);
+  border-right: 1px solid var(--color-main);
+  border-bottom: 1px solid var(--color-main);
+  box-shadow: 0 2px 8px var(--color-main);
   padding: 25px;
   border-radius: 3px;
   text-align: inherit;
