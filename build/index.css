@@ -28,7 +28,7 @@ html {
 }
 
 body {
-  background: url("../img/Surreal6.png")no-repeat, var(--hero-fade);
+  background: url("../img/Surreal6.png")no-repeat, white;
   background-position: right top, center;
   background-size: 50% auto;
   font-family: "Nunito", sans-serif;
@@ -770,10 +770,6 @@ footer {
   .section-heading,
   .project-title {
     font-size: 19.2px;
-  }
-
-  .project-description {
-    /*background-color: #74e6a0; */
   }
 
   .project-content {
