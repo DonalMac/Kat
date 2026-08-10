@@ -722,10 +722,15 @@ footer {
 /*** MOBILE  ***/
 @media all and (max-width: 576px) {
 
+  main {
+    padding: 0 7vw;
+  }
+
   .central-list {
     margin-left: -22px;
     font-style: italic;
     list-style-type: disc;
+    font-size: 18px;
   }
 
   .about-me-details {
@@ -733,6 +738,16 @@ footer {
     display: block;
     position: relative;
     border-radius: 5px;
+  }
+
+  .uber-me-element {
+    padding: 15px;
+    margin-bottom: 15px;
+
+  }
+
+  p {
+    font-size: 20px;
   }
 
   .profile-image {
@@ -758,7 +773,7 @@ footer {
   }
 
   .nav-logo {
-    max-width: 276px;
+    max-width: 310px;
     padding-left: 10px;
   }
 
@@ -768,7 +783,7 @@ footer {
 
   .section-heading,
   .project-title {
-    font-size: 19.2px;
+    font-size: 30px;
   }
 
   .project-content {
