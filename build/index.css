@@ -729,7 +729,7 @@ footer {
   }
 
   .about-me-details {
-    max-width: 300px;
+    max-width: 100%;
     display: block;
     position: relative;
     border-radius: 5px;
